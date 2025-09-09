@@ -4,7 +4,7 @@ import urllib3
 
 def get_database():
     #Provide the mongodb atlas url to connect PYTHON to MongoDB using PYMongo
-    CONNECTION_STRING = <key>
+    CONNECTION_STRING = 'key'
 
     # Create a connection using MongoClient.
     client = MongoClient(CONNECTION_STRING)
@@ -18,3 +18,4 @@ if __name__ == "__main__":
    # Get the database
 
    dbname = get_database()
+
