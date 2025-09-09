@@ -4,7 +4,7 @@ import requests
 from pymongo_get_database import get_database
 
 
-PIXABAY_API_KEY = '51820766-0a04618cb22f2c09b86bcce3e'
+PIXABAY_API_KEY = <key>
 
 class TextInterface: #FIXME: FEATURE : Get nutritional data for each grocery item.
     @staticmethod #Runs without saving instance of class.
@@ -163,4 +163,5 @@ class PantryStorage:
         item_files = dbname.find(item_list_response)
         json_docs = [json.loads(json.dumps(item, default=str)) for item in item_files]
         return json_docs
+
 
